@@ -21,5 +21,4 @@ jobs:
       - name: power shell command
         run: |
           get-command
-          Get-content
           get-location
