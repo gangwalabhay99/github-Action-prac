@@ -8,11 +8,12 @@ jobs:
     steps:
       - name: print hello world
         run: echo "hello world"
-      - name: run multiple command
+      - name: 12 table
         run: |
-          echo "my name is abhay"
-          node -v
-          git -v
+          num = 12
+          for i in range(1, 11):
+          print(num, 'x', i, '=', num*i)
+        shell: python
   power-shell-command:
     runs-on: windows-latest
     steps:
