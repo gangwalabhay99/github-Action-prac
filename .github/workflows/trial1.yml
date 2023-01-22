@@ -10,5 +10,6 @@ jobs:
         run: echo "hello world"
       - name: run multiple command
         run: |
-          echo "heheh first comand printed"
+          echo "my name is abhay"
           node -v
+          git -v
