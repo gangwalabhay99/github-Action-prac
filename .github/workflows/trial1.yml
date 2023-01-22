@@ -13,3 +13,13 @@ jobs:
           echo "my name is abhay"
           node -v
           git -v
+  power-shell-command:
+    runs-on: windows-latest
+    steps:
+      - name: print hello world
+        run: echo "hello world"
+      - name: power shell command
+        run: |
+          get-command
+          Get-content
+          get-location
