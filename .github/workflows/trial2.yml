@@ -1,0 +1,15 @@
+name: shell command
+
+on: [push]
+
+jobs:
+  run-github-act:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GREETING good morning using JS
+        id: greet
+        uses: actions/hello-world-javascript-action@v1.1
+        with:
+          who-to-greet: Mr. Abhay Gangwal
+      - name: time atwhich good morning was greeted
+        run: echo "${{steps.greet.outputs.time}}"
