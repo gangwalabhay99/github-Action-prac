@@ -22,4 +22,4 @@ jobs:
       - name: power shell command
         run: |
           get-location
-          time
+          ls
